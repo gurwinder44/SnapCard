@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CardView2">
+            <rect key="frame" x="0.0" y="0.0" width="408" height="495"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="propic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="87q-7c-mMK">
+                    <rect key="frame" x="0.0" y="0.0" width="408" height="495"/>
+                </imageView>
+                <view hidden="YES" alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5KH-wO-g4t">
+                    <rect key="frame" x="0.0" y="0.0" width="408" height="495"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3nV-UC-ATP">
+                    <rect key="frame" x="0.0" y="198" width="408" height="297"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="x1W-qi-cEN"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="tcW-Ui-Bdu"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hA5-IT-Klt">
+                    <rect key="frame" x="0.0" y="0.0" width="408" height="198"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Software Engineer, ASU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuZ-tL-lOA">
+                            <rect key="frame" x="0.0" y="172" width="408" height="26"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="propic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ5-kB-Uon">
+                            <rect key="frame" x="148" y="8" width="113" height="113"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ZJ5-kB-Uon" secondAttribute="height" multiplier="1:1" id="rLZ-9F-hlu"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pravin Prakash Kumar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X00-zX-JG2">
+                            <rect key="frame" x="0.0" y="129" width="408" height="43"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="26"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="X00-zX-JG2" firstAttribute="height" secondItem="hA5-IT-Klt" secondAttribute="height" multiplier="0.22" id="7lA-Uw-gfp"/>
+                        <constraint firstAttribute="bottom" secondItem="X00-zX-JG2" secondAttribute="bottom" id="8Hh-9Y-e0G"/>
+                        <constraint firstItem="xuZ-tL-lOA" firstAttribute="leading" secondItem="hA5-IT-Klt" secondAttribute="leading" id="9eL-1B-5Ha"/>
+                        <constraint firstItem="X00-zX-JG2" firstAttribute="leading" secondItem="hA5-IT-Klt" secondAttribute="leading" id="BPT-Lr-02D"/>
+                        <constraint firstItem="xuZ-tL-lOA" firstAttribute="height" secondItem="hA5-IT-Klt" secondAttribute="height" multiplier="0.13" id="BiI-b3-INe"/>
+                        <constraint firstItem="ZJ5-kB-Uon" firstAttribute="top" secondItem="hA5-IT-Klt" secondAttribute="top" constant="8" id="ICN-FN-VD6"/>
+                        <constraint firstItem="X00-zX-JG2" firstAttribute="top" secondItem="ZJ5-kB-Uon" secondAttribute="bottom" constant="8" id="PEc-zY-AVm"/>
+                        <constraint firstAttribute="trailing" secondItem="X00-zX-JG2" secondAttribute="trailing" id="SiQ-B9-gOn"/>
+                        <constraint firstAttribute="bottom" secondItem="xuZ-tL-lOA" secondAttribute="bottom" id="Twq-dx-UPi"/>
+                        <constraint firstItem="xuZ-tL-lOA" firstAttribute="top" secondItem="X00-zX-JG2" secondAttribute="bottom" id="c5J-9i-gyc"/>
+                        <constraint firstAttribute="trailing" secondItem="xuZ-tL-lOA" secondAttribute="trailing" id="lHc-uN-e8h"/>
+                        <constraint firstItem="ZJ5-kB-Uon" firstAttribute="centerX" secondItem="hA5-IT-Klt" secondAttribute="centerX" id="r9g-Lr-ggd"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="8Hh-9Y-e0G"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3nV-UC-ATP" firstAttribute="top" secondItem="hA5-IT-Klt" secondAttribute="bottom" id="2Gj-Hk-AwH"/>
+                <constraint firstItem="3nV-UC-ATP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3Zc-wF-lea"/>
+                <constraint firstAttribute="bottom" secondItem="87q-7c-mMK" secondAttribute="bottom" id="CWm-ao-KMa"/>
+                <constraint firstAttribute="trailing" secondItem="hA5-IT-Klt" secondAttribute="trailing" id="EhU-8j-C5y"/>
+                <constraint firstAttribute="bottom" secondItem="3nV-UC-ATP" secondAttribute="bottom" id="JO2-G4-rNb"/>
+                <constraint firstItem="5KH-wO-g4t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NRh-Dl-YDi"/>
+                <constraint firstItem="5KH-wO-g4t" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QrX-HX-j2J"/>
+                <constraint firstItem="87q-7c-mMK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UQW-8k-XwI"/>
+                <constraint firstItem="87q-7c-mMK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="V64-fd-eiP"/>
+                <constraint firstItem="hA5-IT-Klt" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.4" id="WQu-me-63I"/>
+                <constraint firstAttribute="trailing" secondItem="5KH-wO-g4t" secondAttribute="trailing" id="ZOJ-DU-Kv6"/>
+                <constraint firstAttribute="bottom" secondItem="5KH-wO-g4t" secondAttribute="bottom" id="dZT-Ki-hPB"/>
+                <constraint firstAttribute="trailing" secondItem="87q-7c-mMK" secondAttribute="trailing" id="dZf-3p-SlY"/>
+                <constraint firstAttribute="trailing" secondItem="3nV-UC-ATP" secondAttribute="trailing" id="fWb-EQ-NyS"/>
+                <constraint firstItem="hA5-IT-Klt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qkJ-GP-DQj"/>
+                <constraint firstItem="hA5-IT-Klt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sih-fE-byS"/>
+                <constraint firstItem="hA5-IT-Klt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tyZ-tm-0VF"/>
+                <constraint firstItem="hA5-IT-Klt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xDN-9o-AB2"/>
+                <constraint firstAttribute="trailing" secondItem="hA5-IT-Klt" secondAttribute="trailing" id="yJq-wF-Vit"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundImage" destination="87q-7c-mMK" id="IMm-bA-Bvu"/>
+                <outlet property="profileName" destination="X00-zX-JG2" id="7kP-VM-b8S"/>
+                <outlet property="profilePic" destination="ZJ5-kB-Uon" id="tsv-AO-3if"/>
+                <outlet property="tblView" destination="3nV-UC-ATP" id="ruJ-yF-1F5"/>
+            </connections>
+            <point key="canvasLocation" x="241" y="220.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="propic.jpg" width="448" height="448"/>
+    </resources>
+</document>

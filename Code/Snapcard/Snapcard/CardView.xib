@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CardView">
+            <rect key="frame" x="0.0" y="0.0" width="493" height="262"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aXW-0V-rio">
+                    <rect key="frame" x="8" y="8" width="131" height="131"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="aXW-0V-rio" secondAttribute="height" multiplier="1:1" id="oFv-hh-fn3"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pravin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UH1-V4-Ho7">
+                    <rect key="frame" x="152" y="8" width="333" height="52"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Software Engineer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAW-Yj-q1b">
+                    <rect key="frame" x="152" y="60" width="333" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pravin@asu.edu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSa-GJ-Iz3">
+                    <rect key="frame" x="152" y="89" width="169" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4805672894" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtK-UN-euD">
+                    <rect key="frame" x="323" y="89" width="162" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dUM-3g-F7H">
+                    <rect key="frame" x="147" y="137" width="338" height="2"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="FO1-zJ-G2a"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dvd-AM-fug">
+                    <rect key="frame" x="8" y="147" width="477" height="107"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dUM-3g-F7H" firstAttribute="leading" secondItem="aXW-0V-rio" secondAttribute="trailing" constant="8" id="3aA-M5-4ZA"/>
+                <constraint firstItem="aXW-0V-rio" firstAttribute="baseline" secondItem="TSa-GJ-Iz3" secondAttribute="baseline" constant="5" id="9YL-Gl-bEq"/>
+                <constraint firstItem="dUM-3g-F7H" firstAttribute="baseline" secondItem="aXW-0V-rio" secondAttribute="baseline" id="BLs-Er-YzN"/>
+                <constraint firstItem="gAW-Yj-q1b" firstAttribute="leading" secondItem="aXW-0V-rio" secondAttribute="trailing" constant="13" id="EuV-mR-oto"/>
+                <constraint firstItem="aXW-0V-rio" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="FDR-ai-Ya3"/>
+                <constraint firstItem="TSa-GJ-Iz3" firstAttribute="leading" secondItem="aXW-0V-rio" secondAttribute="trailing" constant="13" id="FXg-Jr-9Wk"/>
+                <constraint firstItem="dUM-3g-F7H" firstAttribute="width" secondItem="TSa-GJ-Iz3" secondAttribute="width" multiplier="2" id="NS6-ed-cAP"/>
+                <constraint firstItem="UH1-V4-Ho7" firstAttribute="leading" secondItem="aXW-0V-rio" secondAttribute="trailing" constant="13" id="P3c-3j-RFc"/>
+                <constraint firstItem="aXW-0V-rio" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Rol-JL-fw5"/>
+                <constraint firstAttribute="trailing" secondItem="dvd-AM-fug" secondAttribute="trailing" constant="8" id="TII-vO-Fjx"/>
+                <constraint firstAttribute="trailing" secondItem="dUM-3g-F7H" secondAttribute="trailing" constant="8" id="Tdk-Z8-7hr"/>
+                <constraint firstItem="TSa-GJ-Iz3" firstAttribute="top" secondItem="gAW-Yj-q1b" secondAttribute="bottom" constant="2" id="U1E-rk-m6X"/>
+                <constraint firstAttribute="trailing" secondItem="gAW-Yj-q1b" secondAttribute="trailing" constant="8" id="UhY-1r-mid"/>
+                <constraint firstItem="TtK-UN-euD" firstAttribute="top" secondItem="gAW-Yj-q1b" secondAttribute="bottom" constant="2" id="WHx-8n-QFw"/>
+                <constraint firstItem="dvd-AM-fug" firstAttribute="top" secondItem="dUM-3g-F7H" secondAttribute="bottom" constant="8" id="YG1-Jw-9BO"/>
+                <constraint firstItem="aXW-0V-rio" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="aP0-Rd-x8S"/>
+                <constraint firstItem="TtK-UN-euD" firstAttribute="leading" secondItem="TSa-GJ-Iz3" secondAttribute="trailing" constant="2" id="ei2-ou-OWh"/>
+                <constraint firstItem="gAW-Yj-q1b" firstAttribute="top" secondItem="UH1-V4-Ho7" secondAttribute="bottom" id="gKF-wT-4qH"/>
+                <constraint firstItem="gAW-Yj-q1b" firstAttribute="height" secondItem="aXW-0V-rio" secondAttribute="height" multiplier="0.2" id="i34-OR-mBr"/>
+                <constraint firstItem="UH1-V4-Ho7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="lst-2R-Jzx"/>
+                <constraint firstItem="gAW-Yj-q1b" firstAttribute="centerY" secondItem="aXW-0V-rio" secondAttribute="centerY" id="o7C-DQ-Xst"/>
+                <constraint firstAttribute="trailing" secondItem="UH1-V4-Ho7" secondAttribute="trailing" constant="8" id="phN-j3-9YS"/>
+                <constraint firstAttribute="bottom" secondItem="dvd-AM-fug" secondAttribute="bottom" constant="8" id="tEy-TW-7xu"/>
+                <constraint firstItem="dvd-AM-fug" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="tsj-LU-bBa"/>
+                <constraint firstItem="TtK-UN-euD" firstAttribute="height" secondItem="TSa-GJ-Iz3" secondAttribute="height" id="v4o-5v-bdJ"/>
+                <constraint firstAttribute="trailing" secondItem="TtK-UN-euD" secondAttribute="trailing" constant="8" id="wP4-dy-dOO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="designation" destination="gAW-Yj-q1b" id="Be6-AT-B78"/>
+                <outlet property="email" destination="TSa-GJ-Iz3" id="0xH-i0-91A"/>
+                <outlet property="name" destination="UH1-V4-Ho7" id="c0J-MB-CsF"/>
+                <outlet property="phone" destination="TtK-UN-euD" id="JpR-id-wVA"/>
+                <outlet property="profilepic" destination="aXW-0V-rio" id="Sy0-7f-Xk5"/>
+                <outlet property="scrlView" destination="dvd-AM-fug" id="2Dr-9T-vqt"/>
+            </connections>
+            <point key="canvasLocation" x="489.5" y="-38"/>
+        </view>
+    </objects>
+</document>

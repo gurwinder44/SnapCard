@@ -1,0 +1,70 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
+  - DZNEmptyDataSet (1.8)
+  - FontAwesome+iOS (0.1.4)
+  - FontAwesomeKit (2.2.0):
+    - FontAwesomeKit/Core (= 2.2.0)
+    - FontAwesomeKit/FontAwesome (= 2.2.0)
+    - FontAwesomeKit/FoundationIcons (= 2.2.0)
+    - FontAwesomeKit/IonIcons (= 2.2.0)
+    - FontAwesomeKit/Zocial (= 2.2.0)
+  - FontAwesomeKit/Core (2.2.0)
+  - FontAwesomeKit/FontAwesome (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/FoundationIcons (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/IonIcons (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Zocial (2.2.0):
+    - FontAwesomeKit/Core
+  - JVFloatLabeledTextField (1.1.0)
+  - MBProgressHUD (0.9.2)
+  - PPiAwesomeButton (1.5.2):
+    - FontAwesome+iOS
+  - PPiFlatSegmentedControl (1.4.0):
+    - PPiAwesomeButton
+  - PulsingHalo (0.1.0)
+  - TWMessageBarManager (1.8.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0)
+  - ChameleonFramework
+  - DZNEmptyDataSet
+  - FontAwesomeKit (~> 2.2.0)
+  - JVFloatLabeledTextField
+  - MBProgressHUD (~> 0.9.2)
+  - PPiFlatSegmentedControl
+  - PulsingHalo
+  - TWMessageBarManager
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  DZNEmptyDataSet: d2351b2e8daefa40433ef292e246e21f6be31a7b
+  FontAwesome+iOS: 9070b682a9255ca0fdc34bcfb129ad0ba2b73b87
+  FontAwesomeKit: 025fd4dd1017fe4e3f8d47b03e024deedbb33cd4
+  JVFloatLabeledTextField: ea4a3d8387ddd43724c472bb2b8ab39b79af05d4
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  PPiAwesomeButton: 16f7279582fd36f65186b24b83ef876217363eb5
+  PPiFlatSegmentedControl: ed706988b57f887fc09852dd0da18b3355cd8bea
+  PulsingHalo: d2684152281a3f7398b9554734b9a4f8feb9129a
+  TWMessageBarManager: fd84e7948ba7968a2b5d9454859135761214ec56
+
+COCOAPODS: 0.39.0
